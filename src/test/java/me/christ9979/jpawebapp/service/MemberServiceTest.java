@@ -1,6 +1,6 @@
 package me.christ9979.jpawebapp.service;
 
-import me.christ9979.jpawebapp.entity.Member;
+import me.christ9979.jpawebapp.domain.entity.Member;
 import me.christ9979.jpawebapp.repository.MemberRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,8 +1,8 @@
 package me.christ9979.jpawebapp.service;
 
-import me.christ9979.jpawebapp.entity.Album;
-import me.christ9979.jpawebapp.entity.Book;
-import me.christ9979.jpawebapp.entity.Movie;
+import me.christ9979.jpawebapp.domain.entity.Album;
+import me.christ9979.jpawebapp.domain.entity.Book;
+import me.christ9979.jpawebapp.domain.entity.Movie;
 import me.christ9979.jpawebapp.repository.ItemRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
