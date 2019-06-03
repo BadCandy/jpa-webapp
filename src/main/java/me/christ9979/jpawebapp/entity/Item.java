@@ -1,5 +1,7 @@
 package me.christ9979.jpawebapp.entity;
 
+import me.christ9979.jpawebapp.exception.NotEnoughStockException;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +9,7 @@ import java.util.List;
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "DTYPE")
-public class Item {
+public abstract class Item {
 
     @Id @GeneratedValue
     @Column(name = "ITEM_ID")
@@ -21,6 +23,18 @@ public class Item {
 
     @ManyToMany(mappedBy = "items")
     private List<Category> categories = new ArrayList<>();
+
+    public void addStock(int quantity) {
+        this.stockQuantity += quantity;
+    }
+
+    public void removeStock(int quantity) {
+        int restStock = this.stockQuantity - quantity;
+        if (restStock < 0) {
+           throw new NotEnoughStockException("need more stock");
+        }
+        this.stockQuantity = restStock;
+    }
 
     public Long getId() {
         return id;
