@@ -1,4 +1,4 @@
-package me.christ9979.jpawebapp.entity;
+package me.christ9979.jpawebapp.domain.entity;
 
 import javax.persistence.Embeddable;
 
@@ -10,6 +10,15 @@ public class Address {
     private String street;
 
     private String zipCode;
+
+    public Address() {
+    }
+
+    public Address(String city, String street, String zipCode) {
+        this.city = city;
+        this.street = street;
+        this.zipCode = zipCode;
+    }
 
     public String getCity() {
         return city;

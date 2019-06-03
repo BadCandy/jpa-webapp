@@ -1,6 +1,6 @@
 package me.christ9979.jpawebapp.repository;
 
-import me.christ9979.jpawebapp.entity.Member;
+import me.christ9979.jpawebapp.domain.entity.Member;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;

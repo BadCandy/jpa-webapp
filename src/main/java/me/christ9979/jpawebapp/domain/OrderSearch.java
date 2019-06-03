@@ -1,6 +1,6 @@
 package me.christ9979.jpawebapp.domain;
 
-import me.christ9979.jpawebapp.entity.OrderStatus;
+import me.christ9979.jpawebapp.domain.entity.OrderStatus;
 
 public class OrderSearch {
 

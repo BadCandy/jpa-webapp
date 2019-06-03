@@ -1,8 +1,8 @@
 package me.christ9979.jpawebapp.repository;
 
 import me.christ9979.jpawebapp.domain.OrderSearch;
-import me.christ9979.jpawebapp.entity.Member;
-import me.christ9979.jpawebapp.entity.Order;
+import me.christ9979.jpawebapp.domain.entity.Member;
+import me.christ9979.jpawebapp.domain.entity.Order;
 import org.springframework.stereotype.Repository;
 import org.springframework.util.StringUtils;
 
@@ -23,7 +23,7 @@ public class OrderRepository {
         em.persist(order);
     }
 
-    public Order fineOne(Long id) {
+    public Order findOne(Long id) {
         return em.find(Order.class, id);
     }
 

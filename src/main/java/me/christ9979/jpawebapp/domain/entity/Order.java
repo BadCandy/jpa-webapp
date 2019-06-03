@@ -1,4 +1,4 @@
-package me.christ9979.jpawebapp.entity;
+package me.christ9979.jpawebapp.domain.entity;
 
 import javax.persistence.*;
 import java.util.ArrayList;

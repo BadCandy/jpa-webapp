@@ -1,4 +1,4 @@
-package me.christ9979.jpawebapp.entity;
+package me.christ9979.jpawebapp.domain.entity;
 
 import me.christ9979.jpawebapp.exception.NotEnoughStockException;
 

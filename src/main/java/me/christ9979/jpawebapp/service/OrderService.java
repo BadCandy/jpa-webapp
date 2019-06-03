@@ -1,8 +1,7 @@
 package me.christ9979.jpawebapp.service;
 
 import me.christ9979.jpawebapp.domain.OrderSearch;
-import me.christ9979.jpawebapp.entity.*;
-import me.christ9979.jpawebapp.repository.MemberRepository;
+import me.christ9979.jpawebapp.domain.entity.*;
 import me.christ9979.jpawebapp.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -37,7 +36,7 @@ public class OrderService {
     }
 
     public void cancelOrder(Long orderId) {
-        Order order = orderRepository.fineOne(orderId);
+        Order order = orderRepository.findOne(orderId);
         order.cancel();
     }
 

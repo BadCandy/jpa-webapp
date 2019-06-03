@@ -1,6 +1,6 @@
 package me.christ9979.jpawebapp.service;
 
-import me.christ9979.jpawebapp.entity.Item;
+import me.christ9979.jpawebapp.domain.entity.Item;
 import me.christ9979.jpawebapp.repository.ItemRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
