@@ -1,4 +1,5 @@
 package me.christ9979.jpawebapp.entity;
 
-public class OrderStatus {
+public enum OrderStatus {
+    ORDER, CANCEL
 }
